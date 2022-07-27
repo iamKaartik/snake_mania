@@ -118,25 +118,27 @@ window.requestAnimationFrame(main);
 window.addEventListener('keydown', e =>{
     inputDir = {x: 0, y: 1} // Start the game
     moveSound.play();
+    // Arrow function
     switch (e.key) {
+         //Arrow Up
         case "ArrowUp":
             console.log("ArrowUp");
             inputDir.x = 0;
             inputDir.y = -1;
             break;
-
+        //Arrow Down
         case "ArrowDown":
             console.log("ArrowDown");
             inputDir.x = 0;
             inputDir.y = 1;
             break;
-
+        //Arrow left
         case "ArrowLeft":
             console.log("ArrowLeft");
             inputDir.x = -1;
             inputDir.y = 0;
             break;
-
+        //Arrow right
         case "ArrowRight":
             console.log("ArrowRight");
             inputDir.x = 1;
